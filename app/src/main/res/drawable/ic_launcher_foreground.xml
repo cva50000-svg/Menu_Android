@@ -5,7 +5,6 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Zmenseny hlavny podklad s okrajom, aby nepôsobil prilis velko -->
     <path android:pathData="M28,24 H80 A12,12 0 0 1 92,36 V72 A12,12 0 0 1 80,84 H28 A12,12 0 0 1 16,72 V36 A12,12 0 0 1 28,24 Z">
         <aapt:attr name="android:fillColor">
             <gradient
@@ -20,7 +19,6 @@
         </aapt:attr>
     </path>
 
-    <!-- Vonkajsi ram -->
     <path
         android:pathData="M28,24 H80 A12,12 0 0 1 92,36 V72 A12,12 0 0 1 80,84 H28 A12,12 0 0 1 16,72 V36 A12,12 0 0 1 28,24 Z"
         android:strokeWidth="3"
@@ -40,7 +38,6 @@
         </aapt:attr>
     </path>
 
-    <!-- 1. Pas (Orandzovy) -->
     <path android:pathData="M33,34 H75 A6,6 0 0 1 81,40 A6,6 0 0 1 75,46 H33 A6,6 0 0 1 27,40 A6,6 0 0 1 33,34 Z">
         <aapt:attr name="android:fillColor">
             <gradient android:startX="27" android:startY="40" android:endX="81" android:endY="40" android:type="linear">
@@ -51,7 +48,6 @@
         </aapt:attr>
     </path>
 
-    <!-- 2. Pas (Zeleny) -->
     <path android:pathData="M33,46 H75 A6,6 0 0 1 81,52 A6,6 0 0 1 75,58 H33 A6,6 0 0 1 27,52 A6,6 0 0 1 33,46 Z">
         <aapt:attr name="android:fillColor">
             <gradient android:startX="27" android:startY="52" android:endX="81" android:endY="52" android:type="linear">
@@ -62,7 +58,6 @@
         </aapt:attr>
     </path>
 
-    <!-- 3. Pas (Kralovsky modry) -->
     <path android:pathData="M33,58 H75 A6,6 0 0 1 81,64 A6,6 0 0 1 75,70 H33 A6,6 0 0 1 27,64 A6,6 0 0 1 33,58 Z">
         <aapt:attr name="android:fillColor">
             <gradient android:startX="27" android:startY="64" android:endX="81" android:endY="64" android:type="linear">
@@ -73,7 +68,6 @@
         </aapt:attr>
     </path>
 
-    <!-- 4. Pas (Svetlomodry) -->
     <path android:pathData="M33,70 H75 A6,6 0 0 1 81,76 A6,6 0 0 1 75,82 H33 A6,6 0 0 1 27,76 A6,6 0 0 1 33,70 Z">
         <aapt:attr name="android:fillColor">
             <gradient android:startX="27" android:startY="76" android:endX="81" android:endY="76" android:type="linear">
@@ -85,7 +79,7 @@
     </path>
 
     <!-- Cerveny bod -->
-    <circle android:cx="85" android:cy="30" android:r="3.5" android:fillColor="#EF4444" />
-    <circle android:cx="85" android:cy="30" android:r="1.5" android:fillColor="#FCA5A5" />
+    <path android:pathData="M85,30 m-3.5,0 a3.5,3.5 0 1,1 7,0 a3.5,3.5 0 1,1 -7,0" android:fillColor="#EF4444" />
+    <path android:pathData="M85,30 m-1.5,0 a1.5,1.5 0 1,1 3,0 a1.5,1.5 0 1,1 -3,0" android:fillColor="#FCA5A5" />
 
 </vector>
