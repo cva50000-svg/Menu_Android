@@ -192,10 +192,10 @@ public class MainActivity extends Activity {
             cardParams.height = ViewGroup.LayoutParams.WRAP_CONTENT;
             cardParams.columnSpec = GridLayout.spec(i % 3, 1f);
             cardParams.rowSpec = GridLayout.spec(i / 3);
-            cardParams.setMargins(dp(3), dp(6), dp(3), dp(6));
+            cardParams.setMargins(dp(3), dp(8), dp(3), dp(8)); // Zväčšené vertikálne rozostupy
 
             ImageView iconView = new ImageView(this);
-            LinearLayout.LayoutParams iconParams = new LinearLayout.LayoutParams(dp(44), dp(44));
+            LinearLayout.LayoutParams iconParams = new LinearLayout.LayoutParams(dp(54), dp(54)); // Zväčšená veľkosť ikon
             iconParams.bottomMargin = dp(4);
             iconView.setLayoutParams(iconParams);
 
