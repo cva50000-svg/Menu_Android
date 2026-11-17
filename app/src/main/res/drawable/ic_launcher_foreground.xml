@@ -5,13 +5,14 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <path android:pathData="M22,18 H86 A14,14 0 0 1 100,32 V76 A14,14 0 0 1 86,90 H22 A14,14 0 0 1 8,76 V32 A14,14 0 0 1 22,18 Z">
+    <!-- Zmenseny hlavny podklad s okrajom, aby nepôsobil prilis velko -->
+    <path android:pathData="M28,24 H80 A12,12 0 0 1 92,36 V72 A12,12 0 0 1 80,84 H28 A12,12 0 0 1 16,72 V36 A12,12 0 0 1 28,24 Z">
         <aapt:attr name="android:fillColor">
             <gradient
-                android:startX="8"
-                android:startY="18"
-                android:endX="100"
-                android:endY="90"
+                android:startX="16"
+                android:startY="24"
+                android:endX="92"
+                android:endY="84"
                 android:type="linear">
                 <item android:offset="0.0" android:color="#141B2B" />
                 <item android:offset="1.0" android:color="#070A12" />
@@ -19,16 +20,17 @@
         </aapt:attr>
     </path>
 
+    <!-- Vonkajsi ram -->
     <path
-        android:pathData="M22,18 H86 A14,14 0 0 1 100,32 V76 A14,14 0 0 1 86,90 H22 A14,14 0 0 1 8,76 V32 A14,14 0 0 1 22,18 Z"
-        android:strokeWidth="3.5"
+        android:pathData="M28,24 H80 A12,12 0 0 1 92,36 V72 A12,12 0 0 1 80,84 H28 A12,12 0 0 1 16,72 V36 A12,12 0 0 1 28,24 Z"
+        android:strokeWidth="3"
         android:fillColor="#00000000">
         <aapt:attr name="android:strokeColor">
             <gradient
-                android:startX="10"
-                android:startY="20"
-                android:endX="98"
-                android:endY="88"
+                android:startX="16"
+                android:startY="24"
+                android:endX="92"
+                android:endY="84"
                 android:type="linear">
                 <item android:offset="0.0" android:color="#1FA2FF" />
                 <item android:offset="0.4" android:color="#38BDF8" />
@@ -38,9 +40,10 @@
         </aapt:attr>
     </path>
 
-    <path android:pathData="M28,30 H80 A7,7 0 0 1 87,37 A7,7 0 0 1 80,44 H28 A7,7 0 0 1 21,37 A7,7 0 0 1 28,30 Z">
+    <!-- 1. Pas (Orandzovy) -->
+    <path android:pathData="M33,34 H75 A6,6 0 0 1 81,40 A6,6 0 0 1 75,46 H33 A6,6 0 0 1 27,40 A6,6 0 0 1 33,34 Z">
         <aapt:attr name="android:fillColor">
-            <gradient android:startX="21" android:startY="37" android:endX="87" android:endY="37" android:type="linear">
+            <gradient android:startX="27" android:startY="40" android:endX="81" android:endY="40" android:type="linear">
                 <item android:offset="0.0" android:color="#B45309" />
                 <item android:offset="0.5" android:color="#FBBF24" />
                 <item android:offset="1.0" android:color="#D97706" />
@@ -48,9 +51,10 @@
         </aapt:attr>
     </path>
 
-    <path android:pathData="M28,45 H80 A7,7 0 0 1 87,52 A7,7 0 0 1 80,59 H28 A7,7 0 0 1 21,52 A7,7 0 0 1 28,45 Z">
+    <!-- 2. Pas (Zeleny) -->
+    <path android:pathData="M33,46 H75 A6,6 0 0 1 81,52 A6,6 0 0 1 75,58 H33 A6,6 0 0 1 27,52 A6,6 0 0 1 33,46 Z">
         <aapt:attr name="android:fillColor">
-            <gradient android:startX="21" android:startY="52" android:endX="87" android:endY="52" android:type="linear">
+            <gradient android:startX="27" android:startY="52" android:endX="81" android:endY="52" android:type="linear">
                 <item android:offset="0.0" android:color="#047857" />
                 <item android:offset="0.5" android:color="#34D399" />
                 <item android:offset="1.0" android:color="#059669" />
@@ -58,9 +62,10 @@
         </aapt:attr>
     </path>
 
-    <path android:pathData="M28,60 H80 A7,7 0 0 1 87,67 A7,7 0 0 1 80,74 H28 A7,7 0 0 1 21,67 A7,7 0 0 1 28,60 Z">
+    <!-- 3. Pas (Kralovsky modry) -->
+    <path android:pathData="M33,58 H75 A6,6 0 0 1 81,64 A6,6 0 0 1 75,70 H33 A6,6 0 0 1 27,64 A6,6 0 0 1 33,58 Z">
         <aapt:attr name="android:fillColor">
-            <gradient android:startX="21" android:startY="67" android:endX="87" android:endY="67" android:type="linear">
+            <gradient android:startX="27" android:startY="64" android:endX="81" android:endY="64" android:type="linear">
                 <item android:offset="0.0" android:color="#1D4ED8" />
                 <item android:offset="0.5" android:color="#60A5FA" />
                 <item android:offset="1.0" android:color="#2563EB" />
@@ -68,9 +73,10 @@
         </aapt:attr>
     </path>
 
-    <path android:pathData="M28,75 H80 A7,7 0 0 1 87,82 A7,7 0 0 1 80,89 H28 A7,7 0 0 1 21,82 A7,7 0 0 1 28,75 Z">
+    <!-- 4. Pas (Svetlomodry) -->
+    <path android:pathData="M33,70 H75 A6,6 0 0 1 81,76 A6,6 0 0 1 75,82 H33 A6,6 0 0 1 27,76 A6,6 0 0 1 33,70 Z">
         <aapt:attr name="android:fillColor">
-            <gradient android:startX="21" android:startY="82" android:endX="87" android:endY="82" android:type="linear">
+            <gradient android:startX="27" android:startY="76" android:endX="81" android:endY="76" android:type="linear">
                 <item android:offset="0.0" android:color="#0E7490" />
                 <item android:offset="0.5" android:color="#38BDF8" />
                 <item android:offset="1.0" android:color="#06B6D4" />
@@ -78,7 +84,8 @@
         </aapt:attr>
     </path>
 
-    <path android:pathData="M91,25 m-4,0 a4,4 0 1,1 8,0 a4,4 0 1,1 -8,0" android:fillColor="#EF4444" />
-    <path android:pathData="M91,25 m-2,0 a2,2 0 1,1 4,0 a2,2 0 1,1 -4,0" android:fillColor="#FCA5A5" />
+    <!-- Cerveny bod -->
+    <circle android:cx="85" android:cy="30" android:r="3.5" android:fillColor="#EF4444" />
+    <circle android:cx="85" android:cy="30" android:r="1.5" android:fillColor="#FCA5A5" />
 
 </vector>
