@@ -5,7 +5,6 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Hlavny zaobleny podklad ikony (temny kov/sklo) -->
     <path android:pathData="M22,18 H86 A14,14 0 0 1 100,32 V76 A14,14 0 0 1 86,90 H22 A14,14 0 0 1 8,76 V32 A14,14 0 0 1 22,18 Z">
         <aapt:attr name="android:fillColor">
             <gradient
@@ -20,7 +19,6 @@
         </aapt:attr>
     </path>
 
-    <!-- Vonkajsi farebny obrys ramu (modro-orandzovy prechod) -->
     <path
         android:pathData="M22,18 H86 A14,14 0 0 1 100,32 V76 A14,14 0 0 1 86,90 H22 A14,14 0 0 1 8,76 V32 A14,14 0 0 1 22,18 Z"
         android:strokeWidth="3.5"
@@ -40,7 +38,6 @@
         </aapt:attr>
     </path>
 
-    <!-- 1. Vnutorny svietiaci pas (Orandzovy) -->
     <path android:pathData="M28,30 H80 A7,7 0 0 1 87,37 A7,7 0 0 1 80,44 H28 A7,7 0 0 1 21,37 A7,7 0 0 1 28,30 Z">
         <aapt:attr name="android:fillColor">
             <gradient android:startX="21" android:startY="37" android:endX="87" android:endY="37" android:type="linear">
@@ -51,7 +48,6 @@
         </aapt:attr>
     </path>
 
-    <!-- 2. Vnutorny svietiaci pas (Zeleny) -->
     <path android:pathData="M28,45 H80 A7,7 0 0 1 87,52 A7,7 0 0 1 80,59 H28 A7,7 0 0 1 21,52 A7,7 0 0 1 28,45 Z">
         <aapt:attr name="android:fillColor">
             <gradient android:startX="21" android:startY="52" android:endX="87" android:endY="52" android:type="linear">
@@ -62,7 +58,6 @@
         </aapt:attr>
     </path>
 
-    <!-- 3. Vnutorny svietiaci pas (Kralovsky modry) -->
     <path android:pathData="M28,60 H80 A7,7 0 0 1 87,67 A7,7 0 0 1 80,74 H28 A7,7 0 0 1 21,67 A7,7 0 0 1 28,60 Z">
         <aapt:attr name="android:fillColor">
             <gradient android:startX="21" android:startY="67" android:endX="87" android:endY="67" android:type="linear">
@@ -73,7 +68,6 @@
         </aapt:attr>
     </path>
 
-    <!-- 4. Vnutorny svietiaci pas (Svetlomodry) -->
     <path android:pathData="M28,75 H80 A7,7 0 0 1 87,82 A7,7 0 0 1 80,89 H28 A7,7 0 0 1 21,82 A7,7 0 0 1 28,75 Z">
         <aapt:attr name="android:fillColor">
             <gradient android:startX="21" android:startY="82" android:endX="87" android:endY="82" android:type="linear">
@@ -84,8 +78,7 @@
         </aapt:attr>
     </path>
 
-    <!-- Svietiaci cerveny indikator v pravom hornom rohu (podla predlohy) -->
-    <circle android:cx="91" android:cy="25" android:r="4" android:fillColor="#EF4444" />
-    <circle android:cx="91" android:cy="25" android:r="2" android:fillColor="#FCA5A5" />
+    <path android:pathData="M91,25 m-4,0 a4,4 0 1,1 8,0 a4,4 0 1,1 -8,0" android:fillColor="#EF4444" />
+    <path android:pathData="M91,25 m-2,0 a2,2 0 1,1 4,0 a2,2 0 1,1 -4,0" android:fillColor="#FCA5A5" />
 
 </vector>
