@@ -452,7 +452,13 @@ public class MainActivity extends Activity {
             result.add(new AppItem(label, pkg, ri));
         }
 
-        Collections.sort(result, (a, b) -> a.label.compareToIgnoreCase(b.label));
+        Collections.sort(result, new Comparator<AppItem>() {
+            @Override
+            public int compare(AppItem a, AppItem b) {
+                return a.label.compareToIgnoreCase(b.label);
+            }
+        });
+
         return result;
     }
 
