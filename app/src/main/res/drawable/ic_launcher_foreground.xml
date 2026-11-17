@@ -5,54 +5,87 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <path android:pathData="M34,21 H74 A13,13 0 0 1 87,34 V74 A13,13 0 0 1 74,87 H34 A13,13 0 0 1 21,74 V34 A13,13 0 0 1 34,21 Z">
+    <!-- Hlavny zaobleny podklad ikony (temny kov/sklo) -->
+    <path android:pathData="M22,18 H86 A14,14 0 0 1 100,32 V76 A14,14 0 0 1 86,90 H22 A14,14 0 0 1 8,76 V32 A14,14 0 0 1 22,18 Z">
         <aapt:attr name="android:fillColor">
             <gradient
-                android:startX="21"
-                android:startY="21"
-                android:endX="87"
-                android:endY="87"
+                android:startX="8"
+                android:startY="18"
+                android:endX="100"
+                android:endY="90"
                 android:type="linear">
-                <item android:offset="0.0" android:color="#152238" />
-                <item android:offset="1.0" android:color="#0A111E" />
+                <item android:offset="0.0" android:color="#141B2B" />
+                <item android:offset="1.0" android:color="#070A12" />
             </gradient>
         </aapt:attr>
     </path>
 
+    <!-- Vonkajsi farebny obrys ramu (modro-orandzovy prechod) -->
     <path
-        android:pathData="M34,21 H74 A13,13 0 0 1 87,34 V74 A13,13 0 0 1 74,87 H34 A13,13 0 0 1 21,74 V34 A13,13 0 0 1 34,21 Z"
-        android:strokeWidth="3.2"
+        android:pathData="M22,18 H86 A14,14 0 0 1 100,32 V76 A14,14 0 0 1 86,90 H22 A14,14 0 0 1 8,76 V32 A14,14 0 0 1 22,18 Z"
+        android:strokeWidth="3.5"
         android:fillColor="#00000000">
         <aapt:attr name="android:strokeColor">
             <gradient
-                android:startX="22"
-                android:startY="24"
-                android:endX="86"
-                android:endY="84"
+                android:startX="10"
+                android:startY="20"
+                android:endX="98"
+                android:endY="88"
                 android:type="linear">
-                <item android:offset="0.0" android:color="#28F0E8" />
-                <item android:offset="0.5" android:color="#3B82F6" />
-                <item android:offset="1.0" android:color="#F59E0B" />
+                <item android:offset="0.0" android:color="#1FA2FF" />
+                <item android:offset="0.4" android:color="#38BDF8" />
+                <item android:offset="0.7" android:color="#F59E0B" />
+                <item android:offset="1.0" android:color="#3B82F6" />
             </gradient>
         </aapt:attr>
     </path>
 
-    <path
-        android:pathData="M31,30 L57,54 L31,78 Z"
-        android:fillColor="#0F1B2E"
-        android:strokeWidth="2.4"
-        android:strokeLineJoin="round">
-        <aapt:attr name="android:strokeColor">
-            <gradient android:startX="31" android:startY="30" android:endX="57" android:endY="78" android:type="linear">
-                <item android:offset="0.0" android:color="#28F0E8" />
-                <item android:offset="0.7" android:color="#38BDF8" />
-                <item android:offset="1.0" android:color="#F59E0B" />
+    <!-- 1. Vnutorny svietiaci pas (Orandzovy) -->
+    <path android:pathData="M28,30 H80 A7,7 0 0 1 87,37 A7,7 0 0 1 80,44 H28 A7,7 0 0 1 21,37 A7,7 0 0 1 28,30 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="21" android:startY="37" android:endX="87" android:endY="37" android:type="linear">
+                <item android:offset="0.0" android:color="#B45309" />
+                <item android:offset="0.5" android:color="#FBBF24" />
+                <item android:offset="1.0" android:color="#D97706" />
             </gradient>
         </aapt:attr>
     </path>
 
-    <path
-        android:pathData="M36,43 L48,54 L36,65 Z"
-        android:fillColor="#A5F3FC" />
+    <!-- 2. Vnutorny svietiaci pas (Zeleny) -->
+    <path android:pathData="M28,45 H80 A7,7 0 0 1 87,52 A7,7 0 0 1 80,59 H28 A7,7 0 0 1 21,52 A7,7 0 0 1 28,45 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="21" android:startY="52" android:endX="87" android:endY="52" android:type="linear">
+                <item android:offset="0.0" android:color="#047857" />
+                <item android:offset="0.5" android:color="#34D399" />
+                <item android:offset="1.0" android:color="#059669" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 3. Vnutorny svietiaci pas (Kralovsky modry) -->
+    <path android:pathData="M28,60 H80 A7,7 0 0 1 87,67 A7,7 0 0 1 80,74 H28 A7,7 0 0 1 21,67 A7,7 0 0 1 28,60 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="21" android:startY="67" android:endX="87" android:endY="67" android:type="linear">
+                <item android:offset="0.0" android:color="#1D4ED8" />
+                <item android:offset="0.5" android:color="#60A5FA" />
+                <item android:offset="1.0" android:color="#2563EB" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 4. Vnutorny svietiaci pas (Svetlomodry) -->
+    <path android:pathData="M28,75 H80 A7,7 0 0 1 87,82 A7,7 0 0 1 80,89 H28 A7,7 0 0 1 21,82 A7,7 0 0 1 28,75 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:startX="21" android:startY="82" android:endX="87" android:endY="82" android:type="linear">
+                <item android:offset="0.0" android:color="#0E7490" />
+                <item android:offset="0.5" android:color="#38BDF8" />
+                <item android:offset="1.0" android:color="#06B6D4" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Svietiaci cerveny indikator v pravom hornom rohu (podla predlohy) -->
+    <circle android:cx="91" android:cy="25" android:r="4" android:fillColor="#EF4444" />
+    <circle android:cx="91" android:cy="25" android:r="2" android:fillColor="#FCA5A5" />
 
 </vector>
