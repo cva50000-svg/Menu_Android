@@ -128,7 +128,7 @@ public class MainActivity extends Activity {
 
         LinearLayout panel = new LinearLayout(this);
         panel.setOrientation(LinearLayout.VERTICAL);
-        panel.setPadding(dp(10), dp(10), dp(10), dp(12));
+        panel.setPadding(dp(12), dp(12), dp(12), dp(14));
         panel.setClickable(true);
 
         GradientDrawable panelBg = new GradientDrawable();
@@ -145,7 +145,7 @@ public class MainActivity extends Activity {
         LinearLayout header = new LinearLayout(this);
         header.setOrientation(LinearLayout.HORIZONTAL);
         header.setGravity(Gravity.CENTER_VERTICAL);
-        header.setPadding(dp(4), 0, dp(4), dp(6));
+        header.setPadding(dp(4), 0, dp(4), dp(8));
 
         LinearLayout titleBox = new LinearLayout(this);
         titleBox.setOrientation(LinearLayout.VERTICAL);
@@ -185,23 +185,23 @@ public class MainActivity extends Activity {
             LinearLayout card = new LinearLayout(this);
             card.setOrientation(LinearLayout.VERTICAL);
             card.setGravity(Gravity.CENTER);
-            card.setPadding(dp(4), dp(8), dp(4), dp(8));
+            card.setPadding(dp(4), dp(10), dp(4), dp(10));
 
             GridLayout.LayoutParams cardParams = new GridLayout.LayoutParams();
             cardParams.width = 0;
             cardParams.height = ViewGroup.LayoutParams.WRAP_CONTENT;
             cardParams.columnSpec = GridLayout.spec(i % 3, 1f);
             cardParams.rowSpec = GridLayout.spec(i / 3);
-            cardParams.setMargins(dp(3), dp(8), dp(3), dp(8)); // Zväčšené vertikálne rozostupy
+            cardParams.setMargins(dp(3), dp(14), dp(3), dp(14)); // Výrazne zväčšené vertikálne rozostupy
 
             ImageView iconView = new ImageView(this);
-            LinearLayout.LayoutParams iconParams = new LinearLayout.LayoutParams(dp(54), dp(54)); // Zväčšená veľkosť ikon
-            iconParams.bottomMargin = dp(4);
+            LinearLayout.LayoutParams iconParams = new LinearLayout.LayoutParams(dp(64), dp(64)); // Výrazne zväčšené ikony (64dp)
+            iconParams.bottomMargin = dp(6);
             iconView.setLayoutParams(iconParams);
 
             TextView nameView = new TextView(this);
             nameView.setTextColor(Color.parseColor("#F1F5F9"));
-            nameView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 11);
+            nameView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 12);
             nameView.setTypeface(Typeface.DEFAULT_BOLD);
             nameView.setGravity(Gravity.CENTER);
             nameView.setMaxLines(1);
