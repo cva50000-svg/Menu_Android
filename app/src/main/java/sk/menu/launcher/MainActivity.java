@@ -185,18 +185,18 @@ public class MainActivity extends Activity {
             LinearLayout card = new LinearLayout(this);
             card.setOrientation(LinearLayout.VERTICAL);
             card.setGravity(Gravity.CENTER);
-            card.setPadding(dp(4), dp(6), dp(4), dp(6));
+            card.setPadding(dp(4), dp(8), dp(4), dp(8));
 
             GridLayout.LayoutParams cardParams = new GridLayout.LayoutParams();
             cardParams.width = 0;
             cardParams.height = ViewGroup.LayoutParams.WRAP_CONTENT;
             cardParams.columnSpec = GridLayout.spec(i % 3, 1f);
             cardParams.rowSpec = GridLayout.spec(i / 3);
-            cardParams.setMargins(dp(2), dp(2), dp(2), dp(2));
+            cardParams.setMargins(dp(3), dp(6), dp(3), dp(6));
 
             ImageView iconView = new ImageView(this);
-            LinearLayout.LayoutParams iconParams = new LinearLayout.LayoutParams(dp(36), dp(36));
-            iconParams.bottomMargin = dp(2);
+            LinearLayout.LayoutParams iconParams = new LinearLayout.LayoutParams(dp(44), dp(44));
+            iconParams.bottomMargin = dp(4);
             iconView.setLayoutParams(iconParams);
 
             TextView nameView = new TextView(this);
@@ -446,9 +446,6 @@ public class MainActivity extends Activity {
 
         for (ResolveInfo ri : resolveInfos) {
             String pkg = ri.activityInfo.packageName;
-            if (pkg.equals(myPackage) /* || seenPackages.contains(pkg) */) {
-                // Poznamka: ak by ste chceli povolit duplicity, zakomentujte seenPackages, zatial ponechavame unikatnost
-            }
             if (seenPackages.contains(pkg)) continue;
             seenPackages.add(pkg);
             String label = ri.loadLabel(pm).toString();
